@@ -85,15 +85,15 @@
 
         bspc {
             bindings = <&kp BSPC>;
-            key-positions = <7 8>;
+            key-positions = <7 6>;
             layers = <0 1>;
             require-prior-idle-ms = <300>;
-            timeout-ms = <60>;
+            timeout-ms = <40>;
         };
 
         quote {
             bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <6 7>;
+            key-positions = <27 28>;
             layers = <0 1>;
             require-prior-idle-ms = <300>;
             timeout-ms = <40>;
@@ -129,27 +129,27 @@
 &kp LS(EXCL)          &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)   &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)  &kp PIPE      &kp BSLH
 &mt_pinky LGUI N1     &mt LCTRL N2  &mt LALT N3    &mt LSHIFT N4  &kp N5         &kp N6         &mt RSHIFT N7  &mt RALT N8   &mt RCTRL N9  &mt_pinky RGUI N0
 &mt_pinky PLUS EQUAL  &kp LBKT      &kp LBRC       &kp LPAR       &kp TILDE      &kp GRAVE      &kp RPAR       &kp RBRC      &kp RBKT      &mt_pinky UNDERSCORE MINUS
-&trans                &none         &none          &trans
+&trans                &none         &kp CAPS       &trans
             >;
         };
 
         layer_3 {
             display-name = "FN";
             bindings = <
-&kp F1             &kp F2        &kp F3       &kp F4         &kp F5          &kp C_MUTE    &kp C_VOL_DN     &kp C_VOL_UP  &kp C_PLAY_PAUSE  &soft_off
-&mt_pinky LGUI F6  &mt LCTRL F7  &mt LALT F8  &mt LSHIFT F9  &kp F10         &kp LEFT      &mt RSHIFT DOWN  &mt LALT UP   &mt RCTRL RIGHT   &kp LGUI
-&kp F11            &kp F12       &bt BT_CLR   &none          &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4
-&trans             &kp CAPS      &none        &trans
+&kp F1             &kp F2        &kp F3       &kp F4         &kp F5      &kp C_MUTE    &kp C_VOL_DN     &kp C_VOL_UP  &kp C_PLAY_PAUSE  &soft_off
+&mt_pinky LGUI F6  &mt LCTRL F7  &mt LALT F8  &mt LSHIFT F9  &kp F10     &kp LEFT      &mt RSHIFT DOWN  &mt LALT UP   &mt RCTRL RIGHT   &kp LGUI
+&kp F11            &kp F12       &none        &none          &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4
+&trans             &kp DELETE    &none        &trans
             >;
         };
 
         layer_4 {
             display-name = "MOUSE";
             bindings = <
-&kp DELETE       &mkp MB2        &mmv MOVE_UP    &mkp MB1         &kp PRINTSCREEN  &mkp MCLK  &kp KP_N7         &kp KP_N8       &kp KP_N9        &kp BSPC
+&bootloader      &mkp MB2        &mmv MOVE_UP    &mkp MB1         &kp PRINTSCREEN  &mkp MCLK  &kp KP_N7         &kp KP_N8       &kp KP_N9        &bootloader
 &msc SCRL_RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP     &mkp MB1   &mt RSHIFT KP_N4  &mt RALT KP_N5  &mt RCTRL KP_N6  &mt_pinky RGUI KP_N0
 &msc SCRL_LEFT   &mkp MB4        &mkp MCLK       &mkp MB5         &msc SCRL_DOWN   &mkp MB2   &kp KP_N1         &kp KP_N2       &kp KP_N3        &kp KP_NUM
-&trans           &bootloader     &bootloader     &trans
+&trans           &none           &none           &trans
             >;
         };
 
