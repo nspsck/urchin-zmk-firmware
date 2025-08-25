@@ -104,22 +104,22 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "QWERTY";
-            bindings = <
-&kp Q             &kp W            &kp E           &kp R         &kp T  &kp Y  &kp U         &kp I       &kp O        &kp P
-&mt_pinky LGUI A  &mt LCTRL S      &mt LALT D      &mt LSHIFT F  &kp G  &kp H  &mt RSHIFT J  &mt RALT K  &mt RCTRL L  &mt_pinky RGUI SEMI
-&kp Z             &kp X            &kp C           &kp V         &kp B  &kp N  &kp M         &kp COMMA   &kp DOT      &kp FSLH
-&mo 2             &mod_kp 5 SPACE  &to_kp 1 ENTER  &mo 3
-            >;
-        };
-
-        layer_1 {
             display-name = "CMKDH";
             bindings = <
 &kp Q             &kp W            &kp F           &kp P         &kp B  &kp J  &kp L         &kp U       &kp Y        &kp SEMI
 &mt_pinky LGUI A  &mt LCTRL R      &mt LALT S      &mt LSHIFT T  &kp G  &kp M  &mt RSHIFT N  &mt RALT E  &mt RCTRL I  &mt_pinky RGUI O
 &kp Z             &kp X            &kp C           &kp D         &kp V  &kp K  &kp H         &kp COMMA   &kp DOT      &kp FSLH
 &mo 2             &mod_kp 5 SPACE  &to_kp 0 ENTER  &mo 3
+            >;
+        };
+
+        layer_1 {
+            display-name = "QWERTY";
+            bindings = <
+&kp Q             &kp W            &kp E           &kp R         &kp T  &kp Y  &kp U         &kp I       &kp O        &kp P
+&mt_pinky LGUI A  &mt LCTRL S      &mt LALT D      &mt LSHIFT F  &kp G  &kp H  &mt RSHIFT J  &mt RALT K  &mt RCTRL L  &mt_pinky RGUI SEMI
+&kp Z             &kp X            &kp C           &kp V         &kp B  &kp N  &kp M         &kp COMMA   &kp DOT      &kp FSLH
+&mo 2             &mod_kp 5 SPACE  &to_kp 1 ENTER  &mo 3
             >;
         };
 
