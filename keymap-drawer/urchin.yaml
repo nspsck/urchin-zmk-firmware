@@ -33,7 +33,7 @@ layers:
   - {t: /, s: '?'}
   - SYMNUM
   - {t: '$$mdi:keyboard-space$$', h: WM}
-  - {t: '$$mdi:keyboard-return$$', h: CMKDH}
+  - {t: '$$mdi:keyboard-return$$', h: QWERTY}
   - FN
   QWERTY:
   - Q
@@ -68,7 +68,7 @@ layers:
   - {t: /, s: '?'}
   - SYMNUM
   - {t: '$$mdi:keyboard-space$$', h: WM}
-  - {t: '$$mdi:keyboard-return$$', h: QWERTY}
+  - {t: '$$mdi:keyboard-return$$', h: CMKDH}
   - FN
   SYMNUM:
   - Sft+!
