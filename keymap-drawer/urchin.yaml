@@ -1,40 +1,5 @@
 layout: {zmk_keyboard: urchin}
 layers:
-  QWERTY:
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: A, h: LGUI}
-  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
-  - G
-  - H
-  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: ;, h: RGUI, s: ':'}
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
-  - SYMNUM
-  - {t: '$$mdi:keyboard-space$$', h: WM}
-  - {t: '$$mdi:keyboard-return$$', h: CMKDH}
-  - FN
   CMKDH:
   - Q
   - W
@@ -63,6 +28,41 @@ layers:
   - V
   - K
   - H
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - SYMNUM
+  - {t: '$$mdi:keyboard-space$$', h: WM}
+  - {t: '$$mdi:keyboard-return$$', h: CMKDH}
+  - FN
+  QWERTY:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: A, h: LGUI}
+  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
+  - G
+  - H
+  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ;, h: RGUI, s: ':'}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
@@ -213,13 +213,13 @@ layers:
 combos:
 - p: [2, 1]
   k: $$mdi:keyboard-esc$$
-  l: [QWERTY, CMKDH]
+  l: [CMKDH, QWERTY]
 - p: [11, 12]
   k: $$mdi:keyboard-tab$$
-  l: [QWERTY, CMKDH]
+  l: [CMKDH, QWERTY]
 - p: [7, 6]
   k: {t: '$$mdi:backspace$$', type: backspace}
-  l: [QWERTY, CMKDH]
+  l: [CMKDH, QWERTY]
 - p: [27, 28]
   k: {t: '''', s: '"'}
-  l: [QWERTY, CMKDH]
+  l: [CMKDH, QWERTY]
